@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const MainPage = () => {
@@ -9,7 +10,9 @@ const MainPage = () => {
 </p>
 <div>
   <input type="text" placeholder='Email address' className='pr-36 pl-4 mt-4 w-[40rem]  py-6' />
+  <Link href='/login'>
   <button className='text-white bg-red-600 px-5 rounded-lg rounded-l-none font-bold py-6'>Get Started </button>
+  </Link>
 </div>
       </div>
   )
