@@ -9,7 +9,7 @@ const login = () => {
         <div className='bg-black/60 fixed top-0 left-0 w-full h-screen '>
         </div>
         <Link href='/'>
-        <Image src={Logo} width='250' height={100} className='absolute top-0 left-10'  />
+        <Image src={Logo} width='250' height={100} className='absolute bg-transparent top-0 left-10'  />
         </Link>
         <div className='absolute bg-black/75  w-[450px] h-[600px] left-[36rem] top-40 mx-auto text-white'>
             <p className='ml-16 mt-8 text-3xl text-white'>Sign In</p>
