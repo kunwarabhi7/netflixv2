@@ -10,12 +10,12 @@ const login = () => {
         <Image src={Logo} width='250' height={100} className='absolute top-0 left-10'  />
         <div className='absolute bg-black/75  w-[450px] h-[600px] left-[36rem] top-40 mx-auto text-white'>
             <p className='ml-16 mt-8 text-3xl text-white'>Sign In</p>
-            <div className='flex flex-col m-8  '>
+            <div className='flex flex-col m-8 mb-4 '>
 
             <input type="text" placeholder='Email or phone number' className='mb-8 bg-gray-700 p-3 pr-8 mx-auto w-80 rounded-lg text-white' />
             <input type="text" placeholder='Password' className='mb-8 bg-gray-700 p-3 pr-8 text-white rounded-lg w-80 mx-auto' />
             </div>
-            <button className='bg-red-500 text-white rounded-xl w-80 h-12 -pt-8 ml-16'>Sign In </button>
+            <button className='bg-red-500 text-white font-bold rounded-xl w-80 h-12 -pt-8 ml-16'>Sign In </button>
       <br/>
       <div className='flex justify-between p-4 '>
 <div className='ml-12'>
@@ -25,6 +25,8 @@ const login = () => {
 </div>
         <p className='mr-14'>Need Help</p>
       </div>
+      <p className='text-gray-500 ml-14'>New to Netflix ? <span className='text-white ml-1'>Sign up now.</span></p>
+      <p className='text-gray-500 ml-14'>This page is protected by Google reCAPTCHA to <br/> ensure you're not a bot. <span className='text-blue-500'>Learn more.</span></p>
         </div>
     </div>
   )
