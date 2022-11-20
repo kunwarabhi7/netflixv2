@@ -11,7 +11,7 @@ const NavBar = () => {
 
 <Image src={Logo} height='45' width='167' className='block cursor-pointer '/>
         </div>
-<div className='text-white mt-5 mr-16 '>
+<div className='text-white mt-5 mr-24'>
     
     <button className='bg-transparent border  border-white py-2 px-5 mr-8' >
        <div className='flex items-center'>
@@ -19,7 +19,7 @@ const NavBar = () => {
         </div>
         </button>
         <Link href='login'>
-    <button className='bg-red-700 text-white rounded-xl py-3 h-12 w-18  px-6 cursor-pointer'>Sign In</button>
+    <button className='bg-red-700 text-white font-bold rounded-lg py-3 h-12 w-18  px-8 cursor-pointer'>Sign In</button>
         </Link>
 </div>
     </div>
