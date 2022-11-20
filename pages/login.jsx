@@ -10,6 +10,11 @@ const login = () => {
         <Image src={Logo} width='250' height={100} className='absolute top-0 left-10'  />
         <div className='absolute bg-black/75  w-[450px] h-[600px] left-[36rem] top-40 mx-auto text-white'>
             <p>Sign In</p>
+            <div className='flex flex-col m-8  '>
+
+            <input type="text" placeholder='Email or phone number' className='mb-8 bg-gray-500 p-3 pr-8 rounded-lg text-white' />
+            <input type="text" placeholder='Password' className='mb-8 bg-gray-500 p-3 pr-8 text-white rounded-lg' />
+            </div>
         </div>
     </div>
   )
