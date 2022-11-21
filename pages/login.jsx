@@ -23,7 +23,7 @@ const login = () => {
       <div className='flex justify-between p-4 '>
 <div className='ml-12'>
 
-        <input type='checkbox' />
+        <input className='checked:bg-gray-600 ' type='checkbox' />
         <label>Remember me</label>
 </div>
         <p className='mr-14'>Need Help</p>
