@@ -9,7 +9,7 @@ const NavBar = () => {
     <div className='h-[180px] m-4 w-full bg-transparent flex justify-between'>
         <div>
 
-<Image src={Logo} height='45' width='167' className='block cursor-pointer '/>
+<Image alt='/' src={Logo} height='45' width='167' className='block cursor-pointer '/>
         </div>
 <div className='text-white mt-5 mr-24'>
     

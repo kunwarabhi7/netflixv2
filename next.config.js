@@ -9,6 +9,9 @@ module.exports = {
       {
         hostname: "assets.nflxext.com",
       },
+      {
+        hostname: "image.tmdb.org",
+      },
     ],
   },
 }
