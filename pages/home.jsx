@@ -14,18 +14,14 @@ console.log(header)
 
   return (
     <div className='bg-black h-screen w-full'>
-      <div className='flex justify-between w-full h-14'>
-        <Image src={Logo} className='w-40 h-40'  />
+
+
+      <div className='flex  absolute top-0 left-0 justify-between  w-full h-14'>
+        <Image src={Logo} className='w-40 h-40'   />
         <button className='text-white  bg-red-600 mr-16 mt-12  mb-4 pt-2 pb-8  px-5 rounded-xl'>SignOut</button>
       </div>
-<Image src={`https://image.tmdb.org/t/p/w500/${header.backdrop_path}` } fill  />
-{/* {header.map((head)=>{
-  return(
-    <div>
-    <Image src={head.backdrop_path} fill />
-    </div>
-  )
-})} */}
+<img src={`https://image.tmdb.org/t/p/w500/${header.backdrop_path}` } className=' w-full h-80 '   alt='/'  />
+
 
 
 
