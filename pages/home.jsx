@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React, { useState,useEffect } from 'react'
 import Logo from '../public/assests/logo.png'
 import request from '../components/APIFILE'
+import Slider from '../components/Slider'
 
 const home = () => {
   const [header , setHeader] = useState({})
@@ -10,7 +11,6 @@ const movie = header[Math.floor(Math.random() * header.length)]
 useEffect(()=>{
                 axios.get(request.reqUpcoming).then((res)=>setHeader(res.data.results))
 },[])
-console.log(header)
 
   return (
     <div className='bg-black h-screen w-full'>
@@ -20,7 +20,7 @@ console.log(header)
         <Image src={Logo} className='w-40 h-40 -mt-4'   />
         <button className='text-white  bg-red-600 mr-16 mt-12  mb-4 pt-2 pb-8  px-5 rounded-xl'>SignOut</button>
       </div>
-      <div className='bg-gradient-to-r from-black/80 w-full h-screen  absolute'>
+      <div className='bg-gradient-to-r from-black/80 w-full h-[35rem]  absolute'>
 
 </div>
 
@@ -35,6 +35,10 @@ console.log(header)
         <p className='text-white'>{movie?.overview}</p>
 </div>
 <img src={`https://image.tmdb.org/t/p/w500/${movie?.poster_path}` } className=' w-full h-[35rem] '   alt='/'  />
+
+<div className='text-white'>
+  <Slider />
+</div>
 
 
 
