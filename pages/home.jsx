@@ -4,6 +4,7 @@ import React, { useState,useEffect } from 'react'
 import Logo from '../public/assests/logo.png'
 import request from '../components/APIFILE'
 import Slider from '../components/Slider'
+import Link from 'next/link'
 
 const home = () => {
   const [header , setHeader] = useState({})
@@ -17,7 +18,9 @@ useEffect(()=>{
 
 
       <div className='flex  absolute top-0 left-0 justify-between  w-full h-14'>
-        <Image src={Logo} className='w-40 h-40 -mt-4'   />
+       
+        <Image src={Logo} className='w-40 h-40 -mt-4 cursor-pointer'   />
+        
         <button className='text-white  bg-red-600 mr-16 mt-12  mb-4 pt-2 pb-8  px-5 rounded-xl'>SignOut</button>
       </div>
       <div className='bg-gradient-to-r from-black/80 w-full h-[35rem]  absolute'>

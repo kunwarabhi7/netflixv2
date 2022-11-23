@@ -31,7 +31,11 @@ const login = () => {
 </div>
         <p className='mr-14'>Need Help</p>
       </div>
-      <p className='text-gray-500 ml-14'>New to Netflix ? <span className='text-white ml-1'>Sign up now.</span></p>
+      <p className='text-gray-500 ml-14'>New to Netflix ? 
+      <Link href='/register'>
+      <span className='text-white ml-1'>Sign up now.</span>
+      </Link>
+      </p>
       <p className='text-gray-500 ml-14'>This page is protected by Google reCAPTCHA to <br/> ensure you're not a bot. <span className='text-blue-500'>Learn more.</span></p>
         </div>
     </div>
