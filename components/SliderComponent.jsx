@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
+import MovieComponent from './MovieComponent';
 
 const SliderComponent = (props) => {
     const [movies,setMovies]= useState([])
@@ -16,11 +17,9 @@ axios.get(fetchUrl).then((res)=>setMovies(res.data.results))
 <h2 className='text-white font-bold md:text-xl p-4'>{title}</h2>
 <div className='relative items-center overflow-x-scroll scroll-smooth scrollbar-hide whitespace-nowrap'>
 
-{movies?.map((movie)=>{
+{movies?.map((movie,id)=>{
     return (
-        <div key={movie.id} className='w-40 sm:w-50 md:w-60 lg:w-70 cursor-pointer relative p-2 inline-block'>
-<img src={`https://image.tmdb.org/t/p/w500/${movie?.poster_path}` }    alt='/'  />
-        </div>
+       <MovieComponent movie={movie} id={id}/>
     )
 })}
 </div>
