@@ -4,11 +4,13 @@ import Logo from '../public/assests/logo.png'
 import { useState } from 'react';
 import {  createUserWithEmailAndPassword } from "firebase/auth";
 import {auth} from '../utils/firebase'
+import { useRouter } from 'next/navigation';
 
 const register = () => {
     const [username , setUsername] = useState('')
     const [password , setPassword] = useState('')
-    
+    const router = useRouter();
+
     const registerUser = async (e) => {
         e.preventDefault();
         createUserWithEmailAndPassword(auth, username, password)
@@ -19,6 +21,8 @@ const register = () => {
           setUsername("")
           setPassword('')
           alert('Succesfully Created Account')
+          router.push('/login')
+          
           // ...
         })
         .catch((error) => {
